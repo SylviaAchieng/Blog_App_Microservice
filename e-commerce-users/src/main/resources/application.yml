@@ -1,1 +1,15 @@
-spring.application.name=e-commerce-users
+
+server:
+  port: 4000
+
+spring:
+  application:
+    name: ECOMMERCE_USER_SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
